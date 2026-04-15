@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "manojkrishnappa/productcatalogservice:${GIT_COMMIT}"
+        IMAGE_NAME = "laxmanraju/productcatalogservice:${GIT_COMMIT}"
     }
 
     stages {
 
         stage('Git Checkout') {
             steps {
-                git url: 'https://github.com/QuntamVector/productcatalogservice.git', branch: 'main'
+                git url: 'https://github.com/laxmanraju4144/productcatalogservice.git', branch: 'main'
             }
         }
 
